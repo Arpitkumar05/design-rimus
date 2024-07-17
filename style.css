@@ -1,0 +1,265 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #fbfbfb;
+    color: #d81010;
+    padding: 20px 0;
+    overflow: auto;
+}
+
+header .logo {
+    float: left;
+    max-width: 300px;
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #b32222;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    background: #b31f1f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: #38e408;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.hero .btn {
+    background: #09f328a0;
+    color: #0b0202;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+/* About Us Section */
+.about {
+    background: #d0a0a0;
+    padding: 50px 0;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mission, .vision {
+    width: 45%;
+}
+
+.mission h3, .vision h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 0;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service {
+    width: 30%;
+    text-align: center;
+}
+
+.service i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: #a71086;
+    padding: 50px 0;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.testimonial {
+    width: 45%;
+    text-align: center;
+    background: #21bae0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+}
+
+/* Contact Us Section */
+.contact {
+    padding: 50px 0;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    width: 45%;
+    float: left;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact form button {
+    background: #15f5f9;
+    color: #090909;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact .contact-details {
+    width: 75%;
+    float: right;
+}
+
+.contact .contact-details p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer nav ul li a {
+    color: #3daa0e;
+    text-decoration: none;
+}
+
+footer .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+@media (max-width: 800px) {
+    header .logo, header nav ul {
+        float: none;
+        text-align: center;
+    }
+    
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .menu-toggle {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .mission-vision, .service-list, .testimonial-list, .contact form, .contact .contact-details {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .mission, .vision, .service, .testimonial, .contact form, .contact .contact-details {
+        width: 100%;
+    }
+}
